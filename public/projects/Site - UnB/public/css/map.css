@@ -1,0 +1,24 @@
+#page-map {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#sidebar {
+  background: #e5effa;
+  height: 100vh;
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  width: 4vw;
+  align-self: center;
+}
+
+#vmap {
+  width: 100vw;
+  height: 100vh;
+}

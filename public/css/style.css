@@ -1,0 +1,189 @@
+/*Page-landing*/
+#start {
+  width: 100%;
+  height: 620px;
+}
+/*Lado esquerdo*/
+#div_meio_esquerda {
+  float: left;
+  height: 620px;
+  width: 50%;
+  background-color: #1e1e1e;
+}
+#logo {
+  text-align: center;
+  margin-top: 100px;
+}
+/*Lado direito*/
+#div_meio_direita {
+  float: right;
+  height: 620px;
+  width: 50%;
+  background-color: #6d8abe;
+  text-align: center;
+}
+/*Menu - Superior Direito*/
+#menu {
+  background: #328290;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu a {
+  padding: 10px;
+  margin: 10px;
+  color: rgb(236, 234, 234);
+  text-decoration: none;
+}
+/*Efeito ao passar o mouse no menu*/
+#menu a:hover {
+  background: #1e1e1e;
+  border-radius: 5px;
+  transition: ease-out 0.5s;
+}
+/*Título*/
+#div_meio_direita h1 {
+  color: rgb(236, 234, 234);
+  margin-top: 125px;
+  height: 5rem;
+}
+#div_meio_direita hr {
+  margin: 1rem 4rem;
+}
+/*Apresentação*/
+#presentation p {
+  color: rgb(236, 234, 234);
+  margin: 0.2rem 2rem;
+}
+#presentation h3 {
+  color: rgb(236, 234, 234);
+  margin-top: 2rem;
+}
+/*Menu de Contatos*/
+#contact img {
+  width: 2rem;
+  padding: 0;
+}
+#contact {
+  margin-top: 2rem;
+  color: rgb(236, 234, 234);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  justify-content: center;
+}
+/*Ícones e Infos*/
+#fone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#pin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#pin a {
+  color: rgb(236, 234, 234);
+  text-decoration: none;
+}
+#pin a:active {
+  text-decoration: none;
+  color: rgb(236, 234, 234);
+}
+/*Tela de Projetos*/
+#my-projects {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+}
+
+#projects {
+  margin: 1rem 0.6rem;
+  background: linear-gradient(360deg, #1e1e1e 0%, #1e1e1e 100%) no-repeat;
+  width: 100%;
+  height: 590px;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+#sidebar {
+  color: rgb(236, 234, 234);
+  width: 12%;
+  background: #82a7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#sidebar h2 {
+  margin-top: 2rem;
+}
+
+#sidebar img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+#images {
+  width: 88%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#images a {
+  align-self: center;
+  justify-self: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+/*Aplica o efeito de girar na imagem*/
+#images a:hover {
+  animation-name: flip;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+#images a:after {
+  animation-name: flip;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+/*Coloca a imagem no link*/
+#project1 {
+  background: url(../images/ProjectHappy/capa.png);
+  transition: background 0.5s;
+}
+#project2 {
+  background: url(../images/ProjectSDS/capa.png);
+}
+/*Altera a imagem ao girar*/
+#project1:hover {
+  background: url(../images/ProjectHappy/capa2.png);
+}
+#project2:hover {
+  background: url(../images/ProjectSDS/capa2.gif);
+}

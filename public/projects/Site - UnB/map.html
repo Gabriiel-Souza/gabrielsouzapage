@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/map.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="icon" href="./public/images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/scripts/jqvmap/dist/jqvmap.css" />
+    <title>Mapa Brasil</title>
+  </head>
+  <body>
+    <div id="page-map">
+      <div id="sidebar">
+        <img
+          src="./public/images/logo-cabecalho.png"
+          alt="Sala de Situação"
+          id="logo"
+        />
+      </div>
+      <div id="vmap"></div>
+    </div>
+    <!--Inicilizar o Mapa Interativo-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./public/scripts/jqvmap/dist/jquery.vmap.js"></script>
+    <script
+      src="./public/scripts/jqvmap/dist/maps/jquery.vmap.brazil.js"
+      charset="utf-8"
+    ></script>
+    <!--Mapa Funcionando!-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#vmap").vectorMap({
+          map: "brazil_br",
+          backgroundColor: "#a5bfdd",
+          borderColor: "#818181",
+          borderOpacity: 0.25,
+          borderWidth: 1,
+          color: "#f4f3f0",
+          enableZoom: true,
+          selectedColor:"#0a00a0",
+          hoverColor: "#c9dfaf",
+          normalizeFunction: "linear",
+          scaleColors: ["#b6d6ff", "#005ace"],
+          selectedColor: "#c9dfaf",
+          selectedRegion: null,
+          onLabelShow: function (event, label, code) {
+            label.append('<br> Textinho');
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
